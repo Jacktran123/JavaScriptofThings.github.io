@@ -23,7 +23,7 @@ window.addEventListener('load', ()=>{
                 //Set Dom Elements from the API
 
                 temperatureDegree.textContent=`${temperature}`;
-                temperatureSpan.textContent=`F`;
+                temperatureSpan.textContent=`\xB0F`;
                 temperatureDescription.textContent=summary;
                 locationTimezone.textContent=data.timezone; 
 
@@ -35,10 +35,10 @@ window.addEventListener('load', ()=>{
                 function TemperatureChange(temperature){
                     temperatureSection.addEventListener('click', ()=>{
                         if(temperatureSpan.textContent.includes("F")){
-                         temperatureSpan.textContent="C"
+                         temperatureSpan.textContent="\xB0C"
                           temperatureDegree.textContent=Math.round((temperature - 32) * 5/9)
                         }  else {
-                         temperatureSpan.textContent="F"
+                         temperatureSpan.textContent="\xB0F"
                          temperatureDegree.textContent=temperature
                 }})
                      }
