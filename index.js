@@ -22,7 +22,8 @@ window.addEventListener('load', ()=>{
                 const {temperature, summary, icon} = data.currently; 
                 //Set Dom Elements from the API
 
-                temperatureDegree.textContent=temperature;
+                temperatureDegree.textContent=`${temperature}`;
+                temperatureSpan.textContent=`F`
                 temperatureDescription.textContent=summary;
                 locationTimezone.textContent=data.timezone; 
 
@@ -33,13 +34,13 @@ window.addEventListener('load', ()=>{
                 //change temperature to Celcius
                 function TemperatureChange(temperature){
                     temperatureSection.addEventListener('click', ()=>{
-                        if(temperatureSpan.textContent === "F"){
+                        if(temperatureSpan.textContent.includes("F")){
                          temperatureSpan.textContent="C"
                           temperatureDegree.textContent=Math.round((temperature - 32) * 5/9)
-                        }else{
+                        }  else {
                          temperatureSpan.textContent="F"
                          temperatureDegree.textContent=temperature
-                        }})
+                }})
                      }
                    })
               })
