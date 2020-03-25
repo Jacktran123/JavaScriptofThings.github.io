@@ -12,8 +12,8 @@ window.addEventListener('load', ()=>{
            long=position.coords.longitude;
            lat=position.coords.latitude;
            
-        //    const proxy='https://cors-anywhere.herokuapp.com/';
-           const api=`https://api.darksky.net/forecast/7b156d8670eedc8894ee8c9328ecb8a1/${lat},${long}`
+           const proxy='https://cors-anywhere.herokuapp.com/';
+           const api=`${proxy}https://api.darksky.net/forecast/7b156d8670eedc8894ee8c9328ecb8a1/${lat},${long}`
 
            fetch(api)
             .then(res=> res.json())
@@ -43,6 +43,7 @@ window.addEventListener('load', ()=>{
                 }})
                      }
                    })
+                .catch(error=>console.error(error))
               })
     }
       
