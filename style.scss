@@ -63,12 +63,12 @@ table {
 }
 
 body{
-    background: linear-gradient(to right, #005aa7, #fffde4);
+    
     height: 100%;
 }
 
 nav{
-    background:rgba(0,0,0,0.6);
+    background:rgb(0,0,0);
     height: 15vh;
     min-height: 110px;
    
@@ -93,9 +93,49 @@ nav{
     }
 }
 .wrapper{
-    margin: 150px;
+    background: linear-gradient(to right, #005aa7, #fffde4);
+    height: 100%;
+    width:  100vw;
+   
     font-size: 2.5rem;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 500px){
+        flex-direction: column;
+        width: 90vw;
+     }
+
+    .wrapper-column{
+        display: flex;
+        flex-direction: column;
+        margin-left: 6%;
+        
+        #weather-app{
+           margin: 0 auto;
+           padding: 2% 8% ;
+           
+           margin-bottom: 2%;
+           margin-top: 2%;
+           font-family: 'Frank Ruhl Libre', serif;
+           background: #F0DB4F;
+           width: 50%;
+           @media (max-width: 500px){
+            font-size: 1.2rem;
+        }
+        }
+        .temperature{
+            margin-left: 40vw;
+        }
+            
+    }
+
+    .weather-img{
+        padding: 2%;
+        @media (max-width: 500px){
+            margin-left: 7%;
+         }
+    }
+
+   
 }

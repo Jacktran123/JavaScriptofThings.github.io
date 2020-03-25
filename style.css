@@ -62,13 +62,11 @@ table {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#005aa7), to(#fffde4));
-  background: linear-gradient(to right, #005aa7, #fffde4);
   height: 100%;
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
   height: 15vh;
   min-height: 110px;
 }
@@ -96,8 +94,34 @@ nav .logo {
 }
 
 .wrapper {
-  margin: 150px;
+  background: -webkit-gradient(linear, left top, right top, from(#005aa7), to(#fffde4));
+  background: linear-gradient(to right, #005aa7, #fffde4);
+  height: 100%;
+  width: 100vw;
   font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+  }
+}
+
+.wrapper .wrapper-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +129,36 @@ nav .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  margin-left: 6%;
+}
+
+.wrapper .wrapper-column #weather-app {
+  margin: 0 auto;
+  padding: 2% 8%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-family: 'Frank Ruhl Libre', serif;
+  background: #F0DB4F;
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  .wrapper .wrapper-column #weather-app {
+    font-size: 1.2rem;
+  }
+}
+
+.wrapper .wrapper-column .temperature {
+  margin-left: 40vw;
+}
+
+.wrapper .weather-img {
+  padding: 2%;
+}
+
+@media (max-width: 500px) {
+  .wrapper .weather-img {
+    margin-left: 7%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
