@@ -111,7 +111,7 @@ nav .logo {
           justify-content: space-between;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -142,7 +142,7 @@ nav .logo {
   width: 50%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper .wrapper-column #weather-app {
     font-size: 1.2rem;
   }
@@ -156,9 +156,9 @@ nav .logo {
   padding: 2%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper .weather-img {
-    margin-left: 7%;
+    margin-left: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */

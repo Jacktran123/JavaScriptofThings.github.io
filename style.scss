@@ -101,7 +101,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media (max-width: 500px){
+    @media (max-width: 800px){
         flex-direction: column;
         width: 90vw;
      }
@@ -120,7 +120,7 @@ nav{
            font-family: 'Frank Ruhl Libre', serif;
            background: #F0DB4F;
            width: 50%;
-           @media (max-width: 500px){
+           @media (max-width: 800px){
             font-size: 1.2rem;
         }
         }
@@ -132,8 +132,8 @@ nav{
 
     .weather-img{
         padding: 2%;
-        @media (max-width: 500px){
-            margin-left: 7%;
+        @media (max-width: 800px){
+            margin-left: 10%;
          }
     }
 
