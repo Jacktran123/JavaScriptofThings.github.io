@@ -63,7 +63,7 @@ table {
 }
 
 body{
-    
+    background: linear-gradient(to right, #005aa7, #fffde4);
     height: 100%;
 }
 
@@ -78,7 +78,7 @@ nav{
         font-size: calc(10px + 4.5vw);
         color: white;
         float: right;
-        margin-right: 20%;
+        margin-right: 30%;
         vertical-align: middle;
         @media (max-width: 500px){
             margin-top: 45px;
@@ -92,10 +92,11 @@ nav{
         min-height: 50px;
     }
 }
+
 .wrapper{
-    background: linear-gradient(to right, #005aa7, #fffde4);
+   
     height: 100%;
-    width:  100vw;
+    width:  96vw;
    
     font-size: 2.5rem;
     display: flex;
@@ -139,3 +140,4 @@ nav{
 
    
 }
+
